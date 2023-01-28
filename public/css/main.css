@@ -1,0 +1,270 @@
+/* IMAGES */
+
+@media (min-width: 50em){
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3vw auto;
+    max-width: 68.75rem;
+  }
+}
+
+.largest-image, .thumb-image {
+  cursor: pointer;
+}
+
+.largest-image-wrapper {
+  position: relative;
+}
+
+/* 600px */
+@media (min-width: 37.5em) {
+  .largest-image-wrapper{
+    max-width: 30rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+  }
+}
+
+@media (min-width: 50em) {
+  .image-side {
+    max-width: 25rem;
+    margin-inline: 2vw;
+  }
+}
+
+@media (min-width: 50em){
+  .largest-image {
+    border-radius: var(--br);
+  }
+}
+
+.slide-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 2rem);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide-buttons > button {
+  position: relative;
+  background-color: calc(--White);
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+.slide-buttons > button > img {
+  width: 11px;
+}
+
+.slide-buttons > #prevButton > img {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.slide-buttons > #nextButton > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media(min-width: 50em) {
+  .slide-buttons {
+    display: none;
+  }
+}
+
+.thumb-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumb-images > .thumb-image-wrapper {
+  max-width: 10rem;
+  display: block;
+  border-radius: var(--btn-br);
+}
+
+@media (min-width: 50em) {
+  .thumb-images {
+    margin-top: 2vw;
+  }
+
+  .thumb-images > .thumb-image-wrapper{
+    flex: 1;
+  }
+
+  .thumb-images > .thumb-image-wrapper:not(:nth-last-child(1)){
+    margin-right: 2vw;
+  }
+}
+
+.thumb-image {
+  border-radius: var(--btn-br);
+}
+
+.thumb-image:hover {
+  opacity: .4;
+}
+
+.thumb-image-wrapper.active {
+  outline: 3px solid var(--Orange);
+}
+
+.thumb-image.active {
+  opacity: .4;
+}
+
+.text-side {
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+@media (min-width: 37.5em) {
+  .text-side {
+    width: min(100%, 30rem);
+  }
+}
+
+@media (min-width: 50em) {
+  .text-side {
+    margin-inline: 2vw;
+  }
+}
+
+.product-name {
+  line-height: 1.1;
+}
+
+.product-desc {
+  color: var(--Dark-grayish-blue);
+  margin-block: 1.5rem;
+}
+
+.price-section {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 50em) {
+  .price-section {
+    display: block;
+  }
+}
+
+.discount-area {
+  display: flex;
+  align-items: center;
+}
+
+.price-section .discount-price {
+  display: flex;
+  align-items: center;
+  font-size: var(--fs-700);
+  margin-right: 1rem;
+}
+
+.discount-percentage {
+  background-color: var(--Pale-orange);
+  color: var(--Orange);
+  padding: .1rem .4rem;
+  border-radius: .3rem;
+}
+
+.full-price {
+  text-decoration: line-through;
+  opacity: .2;
+}
+
+.company-name {
+  margin-block: 1.25rem .75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.itens-to-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--Light-grayish-blue);
+  border-radius: var(--btn-br);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 50em) {
+  .itens-to-add {
+    margin: 0rem;
+    flex: 1;
+  }
+}
+
+.cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: var(--btn-br);
+  background-color: var(--Orange);
+  color: var(--White);
+  box-shadow: 0rem 1rem 1rem 0rem rgba(255, 125, 26, .2);
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  opacity: .7;
+}
+
+@media (min-width: 50em) {
+  .cart-button{
+    padding-block: 0rem;
+    flex: 2;
+  }
+}
+
+.button-cart-img {
+  margin-right: 1rem;
+  width: 1.2rem;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(330deg) brightness(102%) contrast(101%);
+}
+
+@media (min-width: 50em) {
+  .button-cart-img {
+    margin-right: .25rem;
+  }
+}
+
+.none {
+  display: none;
+}
+
+@media(min-width: 50em) {
+  .none {
+    display: flex;
+  }
+}
+
+.minus, .plus {
+  cursor: pointer;
+  background-color: transparent;
+  padding: .25rem;
+}
+
+@media (min-width: 50em) {
+  .button-group {
+    display: flex;
+    gap: 1rem;
+  }
+}

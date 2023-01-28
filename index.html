@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="public/css/header.css">
+  <link rel="stylesheet" href="public/css/cart.css">
+  <link rel="stylesheet" href="public/css/main.css">
+  <link rel="stylesheet" href="public/css/lightbox.css">
+  
+  <script src="public/javascript/header.js" defer></script>
+  <script src="public/javascript/carousel.js" defer></script>
+  <script src="public/javascript/lightbox.js" defer></script>
+  <script src="public/javascript/cart.js" defer></script>
+
+  <title>E-commerce product page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    .attribution { font-size: .75rem; text-align: center; }
+    .attribution a { color: var(--Orange); font-weight: bolder;}
+  </style>
+</head>
+<body>
+
+  <header class="sb" data-primary-header> 
+
+    <nav class="nav">
+
+      <div class="logo-wrapper">
+        <button data-open-menu class="menu-btn" aria-controls="ul-list" aria-expanded="false">
+        </button>
+        <img class="logo-image" src="images/logo.svg" alt="logo image">
+      </div>
+      <div class="ul-wrapper">
+        <button data-close-menu class="close-menu-btn"></button>
+        <ul class="ul-list" data-ul-list role="list">
+          <li><a class="li-link" href="#">Collections</a></li>
+          <li><a class="li-link" href="#">Men</a></li>
+          <li><a class="li-link" href="#">Women</a></li>
+          <li><a class="li-link" href="#">About</a></li>
+          <li><a class="li-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+      
+    </nav>
+
+    <div class="align-center">
+      <button class="cart-wrapper" data-cart-basket-button>
+        <img src="images/icon-cart.svg" alt="cart icon">
+        <div class="cart-absolute-wrapper" data-cart-basket></div>
+      </button>
+
+      <div class="cart-basket-wrapper" data-cart-basket>
+        
+      </div>
+
+
+      <div class="profile-wrapper"><img src="images/image-avatar.png" alt="profile picture"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="image-side">
+      <div class="largest-image-wrapper" data-largest-image-wrapper>
+        <img class="largest-image" src="images/image-product-1.jpg" data-main-image alt="">
+
+        <div class="slide-buttons" data-carousel-buttons>
+          <button id="prevButton" data-prev-button>
+            <img src="images/icon-previous.svg" alt="">
+          </button>
+          <button id="nextButton" data-next-button>
+            <img src="images/icon-next.svg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <div class="thumb-images none" data-thumb-parent>
+        <button class="thumb-image-wrapper active" data-thumb-image-wrapper>
+          <img class="thumb-image active" data-thumb-image src="images/image-product-1-thumbnail.jpg" alt="">
+        </button>
+        <button class="thumb-image-wrapper" data-thumb-image-wrapper>
+          <img class="thumb-image" data-thumb-image src="images/image-product-2-thumbnail.jpg" alt="">
+        </button>
+        <button class="thumb-image-wrapper" data-thumb-image-wrapper>
+          <img class="thumb-image" data-thumb-image src="images/image-product-3-thumbnail.jpg" alt="">
+        </button>
+        <button class="thumb-image-wrapper" data-thumb-image-wrapper>
+          <img class="thumb-image" data-thumb-image src="images/image-product-4-thumbnail.jpg" alt="">
+        </button>
+      </div>
+
+      <div class="lightbox-wrapper" data-lightbox>
+
+        <div class="largest-image-wrapper" data-lightbox>
+          <img class="largest-image" src="images/image-product-1.jpg"  data-lightbox alt="">
+          <div class="icon-close" data-lightbox><img src="images/icon-close.svg"></div>
+          <div class="slide-buttons" data-lightbox>
+            <button id="prevButton" data-prev-button>
+                <img src="images/icon-previous.svg" alt="">
+            </button>
+            <button id="nextButton" data-next-button>
+                <img src="images/icon-next.svg" alt="">
+            </button>
+          </div>
+        </div>
+
+        <div class="thumb-images none" data-lightbox>
+          <button class="thumb-image-wrapper active" data-lightbox>
+            <img class="thumb-image active" data-thumb-image data-lightbox src="images/image-product-1-thumbnail.jpg" alt="">
+          </button>
+          <button class="thumb-image-wrapper" data-lightbox>
+            <img class="thumb-image" data-thumb-image data-lightbox src="images/image-product-2-thumbnail.jpg" alt="">
+          </button>
+          <button class="thumb-image-wrapper" data-lightbox>
+            <img class="thumb-image" data-thumb-image data-lightbox src="images/image-product-3-thumbnail.jpg" alt="">
+          </button>
+          <button class="thumb-image-wrapper" data-lightbox>
+            <img class="thumb-image" data-thumb-image data-lightbox src="images/image-product-4-thumbnail.jpg" alt="">
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="text-side">
+      <h1 class="company-name | orange fw-bold">Sneaker Company</h1>
+      <h2 class="product-name | fs-700 fw-bold">Fall Limited Edition Sneakers</h2>
+      <p class="product-desc">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+
+      <div class="price-section">
+        <div class="discount-area | flex">
+          <span class="discount-price | fw-bold">$125.00</span>
+          <span class="discount-percentage | fw-bold">50%</span>
+        </div>
+        <span class="full-price fw-bold">$250.00</span>
+      </div>
+
+      <div class="button-group">
+        <div class="itens-to-add">
+          <button class="minus" data-minus>
+            <img src="images/icon-minus.svg" alt="">
+          </button>
+          <span class="fw-bold" data-amount>0</span>
+          <button class="plus" data-plus>
+            <img src="images/icon-plus.svg" alt="">
+          </button>
+        </div>
+        <button class="cart-button fw-bold" data-add-to-cart>
+          <img src="images/icon-cart.svg" class="button-cart-img">Add to cart</button>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Levy-Jr">Levy Junior</a>.
+  </footer>
+</body>
+</html>

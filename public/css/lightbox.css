@@ -1,0 +1,96 @@
+.lightbox-wrapper[data-lightbox] {
+  display: none;
+}
+
+.thumb-images[data-lightbox] {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .lightbox-wrapper[data-lightbox-visible]{
+    display: block;
+    position: fixed;
+    z-index: 999;
+    inset: 6.5rem;
+  }
+
+  .largest-image-wrapper[data-lightbox-visible]{
+    position: relative;
+  }
+
+  .largest-image[data-lightbox-visible] {
+    position: relative;
+  }
+
+  .icon-close[data-lightbox-visible] {
+    position: absolute;
+    top: -2.25rem;
+    right: 0;
+    width: 1.25rem;
+    cursor: pointer;
+  }
+
+  .icon-close[data-lightbox-visible] > img {
+    width: 100%;
+  }
+
+  .icon-close[data-lightbox-visible] > img:hover {
+    filter: invert(49%) sepia(76%) saturate(713%) hue-rotate(345deg) brightness(101%) contrast(103%);
+  }
+
+  /* overlay */
+  .largest-image-wrapper[data-lightbox-visible]::before{
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .slide-buttons[data-lightbox-visible]{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 3rem);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .slide-buttons[data-lightbox-visible] > button {
+    position: relative;
+    background-color: calc(--White);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+  .slide-buttons[data-lightbox-visible] > button > img {
+    width: 11px;
+  }
+
+  .slide-buttons[data-lightbox-visible] > button:hover > img {
+    filter: invert(49%) sepia(76%) saturate(713%) hue-rotate(345deg) brightness(101%) contrast(103%);
+  }
+  
+  .slide-buttons[data-lightbox-visible] > #prevButton > img {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slide-buttons[data-lightbox-visible] > #nextButton > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thumb-images[data-lightbox-visible]{
+    display: flex;
+    position: relative;
+    width: min(100%, 25rem);
+    margin: 1.5rem auto 0;
+  }
+}
