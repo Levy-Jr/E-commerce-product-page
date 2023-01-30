@@ -32,10 +32,6 @@ const productPrice = 125.00
 const cartWrapper = document.querySelector('.cart-basket-wrapper[data-cart-basket]')
 const cartAbsoluteWrapper = document.querySelector('.cart-absolute-wrapper[data-cart-basket]')
 
-/* const addCartFlag = () => {
-  return cartButton.insertAdjacentHTML('beforeend', `<div class="cart-absolute"><span data-cart-number>${itemAmountNumber}</span></div>`)
-} */
-
 const addCartFilled = () => {
   cartWrapper.innerHTML = `
   <div class="cart-basket" data-cart-basket data-visible>

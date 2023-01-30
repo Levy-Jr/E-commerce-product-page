@@ -18,8 +18,8 @@
   <title>E-commerce product page</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     .attribution { font-size: .75rem; text-align: center; }
@@ -67,14 +67,33 @@
 
   <main class="container">
     <div class="image-side">
-      <div class="largest-image-wrapper" data-largest-image-wrapper>
-        <img class="largest-image" src="images/image-product-1.jpg" data-main-image alt="">
+      <div class="carousel" data-carousel>
+
+        <div data-slides>
+
+          <div class="slide" data-slide data-active>
+            <img class="largest-image" src="images/image-product-1.jpg" alt="a pair of shoes">
+          </div>
+
+          <div class="slide" data-slide>
+            <img class="largest-image" src="images/image-product-2.jpg" alt="a pair of shoes">
+          </div>
+
+          <div class="slide" data-slide>
+            <img class="largest-image" src="images/image-product-3.jpg" alt="a pair of shoes">
+          </div>
+
+          <div class="slide" data-slide>
+            <img class="largest-image" src="images/image-product-4.jpg" alt="a pair of shoes">
+          </div>
+
+        </div>
 
         <div class="slide-buttons" data-carousel-buttons>
-          <button id="prevButton" data-prev-button>
+          <button id="prevButton" data-carousel-button="prev">
             <img src="images/icon-previous.svg" alt="">
           </button>
-          <button id="nextButton" data-next-button>
+          <button id="nextButton" data-carousel-button="next">
             <img src="images/icon-next.svg" alt="">
           </button>
         </div>
@@ -82,24 +101,43 @@
 
       <div class="thumb-images none" data-thumb-parent>
         <button class="thumb-image-wrapper active" data-thumb-image-wrapper>
-          <img class="thumb-image active" data-thumb-image src="images/image-product-1-thumbnail.jpg" alt="">
+          <img class="thumb-image active" data-thumb-image src="images/image-product-1-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
         <button class="thumb-image-wrapper" data-thumb-image-wrapper>
-          <img class="thumb-image" data-thumb-image src="images/image-product-2-thumbnail.jpg" alt="">
+          <img class="thumb-image" data-thumb-image src="images/image-product-2-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
         <button class="thumb-image-wrapper" data-thumb-image-wrapper>
-          <img class="thumb-image" data-thumb-image src="images/image-product-3-thumbnail.jpg" alt="">
+          <img class="thumb-image" data-thumb-image src="images/image-product-3-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
         <button class="thumb-image-wrapper" data-thumb-image-wrapper>
-          <img class="thumb-image" data-thumb-image src="images/image-product-4-thumbnail.jpg" alt="">
+          <img class="thumb-image" data-thumb-image src="images/image-product-4-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
       </div>
 
       <div class="lightbox-wrapper" data-lightbox>
 
-        <div class="largest-image-wrapper" data-lightbox>
-          <img class="largest-image" src="images/image-product-1.jpg"  data-lightbox alt="">
+        <div class="carousel" data-lightbox>
+
+          <div>
+
+            <div class="slide" data-lightbox data-active>
+              <img class="largest-image" src="images/image-product-1.jpg"  data-lightbox alt="">
+            </div>
+            <div class="slide" data-lightbox>
+              <img class="largest-image" src="images/image-product-2.jpg"  data-lightbox alt="">
+            </div>
+            <div class="slide" data-lightbox>
+              <img class="largest-image" src="images/image-product-3.jpg"  data-lightbox alt="">
+            </div>
+            <div class="slide" data-lightbox>
+              <img class="largest-image" src="images/image-product-4.jpg"  data-lightbox alt="">
+            </div>
+
+          </div>
           <div class="icon-close" data-lightbox><img src="images/icon-close.svg"></div>
+
+
+          
           <div class="slide-buttons" data-lightbox>
             <button id="prevButton" data-prev-button>
                 <img src="images/icon-previous.svg" alt="">

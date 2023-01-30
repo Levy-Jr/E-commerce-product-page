@@ -14,17 +14,29 @@
   cursor: pointer;
 }
 
-.largest-image-wrapper {
+.carousel {
   position: relative;
 }
 
 /* 600px */
 @media (min-width: 37.5em) {
-  .largest-image-wrapper{
+  .carousel{
     max-width: 30rem;
     margin: 0 auto;
     border-radius: 2rem;
   }
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  position: static;
 }
 
 @media (min-width: 50em) {
@@ -81,6 +93,8 @@
     display: none;
   }
 }
+
+/* end of carousel styling */
 
 .thumb-images {
   display: flex;

@@ -14,7 +14,7 @@
     inset: 6.5rem;
   }
 
-  .largest-image-wrapper[data-lightbox-visible]{
+  .carousel[data-lightbox-visible]{
     position: relative;
   }
 
