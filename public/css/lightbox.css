@@ -39,7 +39,7 @@
   }
 
   /* overlay */
-  .largest-image-wrapper[data-lightbox-visible]::before{
+  .carousel[data-lightbox-visible]::before{
     content: '';
     position: fixed;
     inset: 0;

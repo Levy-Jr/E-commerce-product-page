@@ -32,11 +32,14 @@
   inset: 0;
   opacity: 0;
   z-index: -1;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
 }
 
 .slide[data-active] {
   opacity: 1;
   position: static;
+  transition-delay: 0ms;
 }
 
 @media (min-width: 50em) {

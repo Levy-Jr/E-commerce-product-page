@@ -12,7 +12,6 @@
   
   <script src="public/javascript/header.js" defer></script>
   <script src="public/javascript/carousel.js" defer></script>
-  <script src="public/javascript/lightbox.js" defer></script>
   <script src="public/javascript/cart.js" defer></script>
 
   <title>E-commerce product page</title>
@@ -71,20 +70,20 @@
 
         <div data-slides>
 
-          <div class="slide" data-slide data-active>
-            <img class="largest-image" src="images/image-product-1.jpg" alt="a pair of shoes">
+          <div class="slide" data-slide data-1 data-active>
+            <img class="largest-image" src="images/image-product-1.jpg" alt="a pair of shoes #1">
           </div>
 
-          <div class="slide" data-slide>
-            <img class="largest-image" src="images/image-product-2.jpg" alt="a pair of shoes">
+          <div class="slide" data-slide data-2>
+            <img class="largest-image" src="images/image-product-2.jpg" alt="a pair of shoes #2">
           </div>
 
-          <div class="slide" data-slide>
-            <img class="largest-image" src="images/image-product-3.jpg" alt="a pair of shoes">
+          <div class="slide" data-slide data-3>
+            <img class="largest-image" src="images/image-product-3.jpg" alt="a pair of shoes #3">
           </div>
 
-          <div class="slide" data-slide>
-            <img class="largest-image" src="images/image-product-4.jpg" alt="a pair of shoes">
+          <div class="slide" data-slide data-4>
+            <img class="largest-image" src="images/image-product-4.jpg" alt="a pair of shoes #4">
           </div>
 
         </div>
@@ -103,12 +102,15 @@
         <button class="thumb-image-wrapper active" data-thumb-image-wrapper>
           <img class="thumb-image active" data-thumb-image src="images/image-product-1-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
+
         <button class="thumb-image-wrapper" data-thumb-image-wrapper>
           <img class="thumb-image" data-thumb-image src="images/image-product-2-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
+
         <button class="thumb-image-wrapper" data-thumb-image-wrapper>
           <img class="thumb-image" data-thumb-image src="images/image-product-3-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
+
         <button class="thumb-image-wrapper" data-thumb-image-wrapper>
           <img class="thumb-image" data-thumb-image src="images/image-product-4-thumbnail.jpg" alt="a pair of shoes thumb">
         </button>
@@ -116,33 +118,32 @@
 
       <div class="lightbox-wrapper" data-lightbox>
 
-        <div class="carousel" data-lightbox>
+        <div class="carousel" data-carousel data-lightbox>
 
-          <div>
+          <div data-lightbox-slide data-lightbox>
 
-            <div class="slide" data-lightbox data-active>
-              <img class="largest-image" src="images/image-product-1.jpg"  data-lightbox alt="">
+            <div class="slide lightboxSlide" data-lightbox data-1 data-active>
+              <img class="largest-image" src="images/image-product-1.jpg" data-lightbox alt="a pair of shoes #1">
             </div>
-            <div class="slide" data-lightbox>
-              <img class="largest-image" src="images/image-product-2.jpg"  data-lightbox alt="">
+            <div class="slide lightboxSlide" data-lightbox data-2>
+              <img class="largest-image" src="images/image-product-2.jpg" data-lightbox alt="a pair of shoes #2">
             </div>
-            <div class="slide" data-lightbox>
-              <img class="largest-image" src="images/image-product-3.jpg"  data-lightbox alt="">
+            <div class="slide lightboxSlide" data-lightbox data-3>
+              <img class="largest-image" src="images/image-product-3.jpg" data-lightbox alt="a pair of shoes #3">
             </div>
-            <div class="slide" data-lightbox>
-              <img class="largest-image" src="images/image-product-4.jpg"  data-lightbox alt="">
+            <div class="slide lightboxSlide" data-lightbox data-4>
+              <img class="largest-image" src="images/image-product-4.jpg" data-lightbox alt="a pair of shoes #4">
             </div>
 
           </div>
+
           <div class="icon-close" data-lightbox><img src="images/icon-close.svg"></div>
 
-
-          
           <div class="slide-buttons" data-lightbox>
-            <button id="prevButton" data-prev-button>
+            <button id="prevButton" data-lightbox-carousel-button="prev">
                 <img src="images/icon-previous.svg" alt="">
             </button>
-            <button id="nextButton" data-next-button>
+            <button id="nextButton" data-lightbox-carousel-button="next">
                 <img src="images/icon-next.svg" alt="">
             </button>
           </div>
@@ -150,16 +151,19 @@
 
         <div class="thumb-images none" data-lightbox>
           <button class="thumb-image-wrapper active" data-lightbox>
-            <img class="thumb-image active" data-thumb-image data-lightbox src="images/image-product-1-thumbnail.jpg" alt="">
+            <img class="thumb-image active" data-lightbox src="images/image-product-1-thumbnail.jpg" alt="">
           </button>
+
           <button class="thumb-image-wrapper" data-lightbox>
-            <img class="thumb-image" data-thumb-image data-lightbox src="images/image-product-2-thumbnail.jpg" alt="">
+            <img class="thumb-image" data-lightbox src="images/image-product-2-thumbnail.jpg" alt="">
           </button>
+
           <button class="thumb-image-wrapper" data-lightbox>
-            <img class="thumb-image" data-thumb-image data-lightbox src="images/image-product-3-thumbnail.jpg" alt="">
+            <img class="thumb-image" data-lightbox src="images/image-product-3-thumbnail.jpg" alt="">
           </button>
+
           <button class="thumb-image-wrapper" data-lightbox>
-            <img class="thumb-image" data-thumb-image data-lightbox src="images/image-product-4-thumbnail.jpg" alt="">
+            <img class="thumb-image" data-lightbox src="images/image-product-4-thumbnail.jpg" alt="">
           </button>
         </div>
 
