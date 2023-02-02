@@ -77,14 +77,14 @@
   width: 11px;
 }
 
-.slide-buttons > #prevButton > img {
+.slide-buttons > .prevButton > img {
   position: absolute;
   top: 50%;
   left: 47%;
   transform: translate(-50%, -50%);
 }
 
-.slide-buttons > #nextButton > img {
+.slide-buttons > .nextButton > img {
   position: absolute;
   top: 50%;
   left: 50%;

@@ -175,6 +175,7 @@ header {
 
 header .ul-list {
   display: none;
+  list-style-type: none;
 }
 
 .ul-wrapper{
