@@ -106,7 +106,7 @@ button {
 
 body {
   font-family: var(--ff);
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 50em) {
