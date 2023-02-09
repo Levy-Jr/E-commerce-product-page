@@ -1,4 +1,4 @@
-# Página de um produto de um e-commerce
+# Página de um produto de e-commerce
 Desafio concluído do Frontend Mentor
 
 Acesse a página: https://levy-jr.github.io/E-commerce-product-page/
